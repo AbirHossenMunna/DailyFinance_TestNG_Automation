@@ -40,34 +40,6 @@ test {
             println("Password: " + project.property("password"))
         }
 
-        // Check if the 'suiteName' property is passed
-//        if (project.hasProperty("suiteName")) {
-//            // Retrieve the suiteName property
-//            def suiteName = project.property("suiteName")
-//
-//            // Construct the dynamic path for the suite
-//            def suitesPath = file("src/test/resources/${suiteName}.xml")
-//
-//            // Print the suites path for debugging
-//            println("Using test suite: " + suitesPath)
-//
-//            // Configure the Test task to use TestNG with the specified suite
-//            tasks.withType(Test) {
-//                useTestNG() // Ensure TestNG is used
-//                if (suitesPath.exists()) {
-//                    // Use setSuiteFiles instead of suites
-//                    suiteFiles = files(suitesPath)
-//                } else {
-//                    throw new GradleException("Suite file not found: ${suitesPath}")
-//                }
-//            }
-//        }
-//        else {
-//            throw new GradleException("No suiteName provided. Please pass a suiteName property using -PsuiteName=<suiteName>.")
-//        }
-
-//        suites "./src/test/resources/smokeSuites.xml"
-
         if (project.hasProperty("suiteName")) {
             systemProperties.put("suiteName", project.property("suiteName"))
             print(project.property("suiteName"))
