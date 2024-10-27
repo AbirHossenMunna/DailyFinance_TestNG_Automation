@@ -61,10 +61,7 @@ allure serve allure-results
 ```
 ### Testing Report for RegressionSuites
 #### Here is the Summary report:
-<img width="934" alt="Test Summary (Regression)" src="hhttps://github.com/user-attachments/assets/91a1da93-279e-4f84-8aa1-743bc10d83f9.PNG">
-![Allure Suites  (Regression)](https://github.com/user-attachments/assets/f9f0e604-3b7c-4031-868f-3f63e166c9f1)
-
-
+<img width="934" alt="Test Summary (Regression)" src="https://github.com/user-attachments/assets/91a1da93-279e-4f84-8aa1-743bc10d83f9.PNG">
 
 #### Here is the Allure report overview:
 <img width="935" alt="Allure Report (Regression)" src="https://github.com/user-attachments/assets/4fa2b025-9271-47d2-8533-ad6370119fe0.PNG">
