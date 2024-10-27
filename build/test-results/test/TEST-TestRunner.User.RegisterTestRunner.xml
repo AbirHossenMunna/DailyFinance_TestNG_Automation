@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.User.RegisterTestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-27T20:30:24" hostname="DESKTOP-IB7ED16" time="27.848">
+  <properties/>
+  <testcase name="doRegistrationWithAlreadyExistsEmail" classname="TestRunner.User.RegisterTestRunner" time="6.872"/>
+  <testcase name="userRegByMandatoryField" classname="TestRunner.User.RegisterTestRunner" time="11.181"/>
+  <testcase name="userRegByAllField" classname="TestRunner.User.RegisterTestRunner" time="9.777"/>
+  <system-out><![CDATA[Saved
+Saved
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

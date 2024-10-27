@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.User.UserLoginTestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-27T20:30:54" hostname="DESKTOP-IB7ED16" time="19.963">
+  <properties/>
+  <testcase name="doLoginWithInvalidEmailAndValidPassword" classname="TestRunner.User.UserLoginTestRunner" time="3.469"/>
+  <testcase name="doLoginWithValidEmailAndInvalidPassword" classname="TestRunner.User.UserLoginTestRunner" time="11.598"/>
+  <testcase name="doLoginWithValidCredential" classname="TestRunner.User.UserLoginTestRunner" time="4.882"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

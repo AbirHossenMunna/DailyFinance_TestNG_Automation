@@ -1,0 +1,78 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.25.0'
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.18.1'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.7.0'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
+    implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.9.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.17.2'
+}
+test {
+    useTestNG() {
+        if (project.hasProperty("username") && project.hasProperty("password")) {
+            systemProperties.put("username", project.property("username"))
+            systemProperties.put("password", project.property("password"))
+
+            // Use println for output during the build
+            println("Username: " + project.property("username"))
+            println("Password: " + project.property("password"))
+        }
+
+        // Check if the 'suiteName' property is passed
+//        if (project.hasProperty("suiteName")) {
+//            // Retrieve the suiteName property
+//            def suiteName = project.property("suiteName")
+//
+//            // Construct the dynamic path for the suite
+//            def suitesPath = file("src/test/resources/${suiteName}.xml")
+//
+//            // Print the suites path for debugging
+//            println("Using test suite: " + suitesPath)
+//
+//            // Configure the Test task to use TestNG with the specified suite
+//            tasks.withType(Test) {
+//                useTestNG() // Ensure TestNG is used
+//                if (suitesPath.exists()) {
+//                    // Use setSuiteFiles instead of suites
+//                    suiteFiles = files(suitesPath)
+//                } else {
+//                    throw new GradleException("Suite file not found: ${suitesPath}")
+//                }
+//            }
+//        }
+//        else {
+//            throw new GradleException("No suiteName provided. Please pass a suiteName property using -PsuiteName=<suiteName>.")
+//        }
+
+//        suites "./src/test/resources/smokeSuites.xml"
+
+        if (project.hasProperty("suiteName")) {
+            systemProperties.put("suiteName", project.property("suiteName"))
+            print(project.property("suiteName"))
+        }
+
+        suites "./src/test/resources/" + systemProperties.get("suiteName")
+        }
+    }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.Admin.AdminLoginTestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-27T20:28:46" hostname="DESKTOP-IB7ED16" time="94.023">
+  <properties/>
+  <testcase name="doLoginWithInvalidEmailAndValidPassword" classname="TestRunner.Admin.AdminLoginTestRunner" time="79.761"/>
+  <testcase name="doLoginWithValidEmailAndInvalidPassword" classname="TestRunner.Admin.AdminLoginTestRunner" time="1.4"/>
+  <testcase name="doLoginWithValidCredential" classname="TestRunner.Admin.AdminLoginTestRunner" time="12.749"/>
+  <system-out><![CDATA[First name is: Jules
+Email: abir754@gmail.com
+Phone number: 01755855252
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
