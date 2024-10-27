@@ -40,13 +40,14 @@ For failed test cases it will take a screenshot aswell at the point of failure.
 #### Here is the Summary report:
 ![Test Summary (Smoke)](https://github.com/user-attachments/assets/b9ae8cfd-41f5-4537-9486-d7c8e6124c6f)
 
-<img width="935" alt="Test Summary (Smoke)" src="https://github.com/user-attachments/assets/4b0a02e8-142f-451c-90e7-36cb1cab21bb.PNG">
-
 #### Here is the Allure report overview:
-<img width="935" alt="Allure Report(Smoke)" src="https://github.com/user-attachments/assets/26b4139c-675b-4e88-85e7-f5442e5c8356.PNG">
+![Allure Report(Smoke)](https://github.com/user-attachments/assets/2faa4606-d898-4c2a-8538-a4df69d523ac)
 
-#### Here are the suites of this project:
-<img width="920" alt="Allure Suites(smoke)" src="https://github.com/user-attachments/assets/937d2ed3-c6ac-45f8-afca-94fd21134957.PNG">
+#### Here are the allure suites of this project:
+![Allure Suites(smoke)](https://github.com/user-attachments/assets/42053b27-75a0-4365-bb21-4451c9b96641)
+
+#### Here are the Allure Behaviors of this project:
+![Allure_Behaviour (Smoke)](https://github.com/user-attachments/assets/0d60223a-5a5d-42c5-a921-f3d735cb0701)
 
 ### Run the Automation Script by the following command:
 * Selenium will open the browser and start automating for regressionSuites.
@@ -63,10 +64,14 @@ allure serve allure-results
 ```
 ### Testing Report for RegressionSuites
 #### Here is the Summary report:
-<img width="934" alt="Test Summary (Regression)" src="https://github.com/user-attachments/assets/91a1da93-279e-4f84-8aa1-743bc10d83f9.PNG">
+![Test Summary (Regression)](https://github.com/user-attachments/assets/8795106e-03d6-4971-932a-5c3349f96e2b)
 
 #### Here is the Allure report overview:
-<img width="935" alt="Allure Report (Regression)" src="https://github.com/user-attachments/assets/4fa2b025-9271-47d2-8533-ad6370119fe0.PNG">
+![Allure Report (Regression)](https://github.com/user-attachments/assets/b42fbdf4-94e1-4530-b3ed-82ffa8130f0b)
 
-#### Here are the suites of this project:
-<img width="920" alt="Allure Suites  (Regression)" src="https://github.com/user-attachments/assets/f9f0e604-3b7c-4031-868f-3f63e166c9f1.PNG">
+#### Here are the allure suites of this project:
+![Allure Suites  (Regression)](https://github.com/user-attachments/assets/6ae22fbf-1e13-4add-b7ae-be9ff33217e6)
+
+#### Here are the Allure Behaviors of this project:
+![Allure Behaviour (Regression)](https://github.com/user-attachments/assets/877dbbe6-9638-44f5-862b-86bc0436bf9f)
+
