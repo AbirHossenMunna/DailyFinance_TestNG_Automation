@@ -38,6 +38,8 @@ For failed test cases it will take a screenshot aswell at the point of failure.
 ```
 ### Testing Report for SmokeSuites
 #### Here is the Summary report:
+![Test Summary (Smoke)](https://github.com/user-attachments/assets/b9ae8cfd-41f5-4537-9486-d7c8e6124c6f)
+
 <img width="935" alt="Test Summary (Smoke)" src="https://github.com/user-attachments/assets/4b0a02e8-142f-451c-90e7-36cb1cab21bb.PNG">
 
 #### Here is the Allure report overview:
