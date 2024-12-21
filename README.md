@@ -75,3 +75,6 @@ allure serve allure-results
 #### Here are the Allure Behaviors of this project:
 ![Allure Behaviour (Regression)](https://github.com/user-attachments/assets/877dbbe6-9638-44f5-862b-86bc0436bf9f)
 
+#### Here is the Project Video:
+https://github.com/user-attachments/assets/a0535104-1a6d-4653-a648-f47daa6aed16
+
